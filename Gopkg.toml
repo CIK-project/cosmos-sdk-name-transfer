@@ -1,4 +1,8 @@
 [[constraint]]
+  name = "github.com/cosmos/cosmos-sdk"
+  version = "=v0.28.0"
+
+[[constraint]]
   name = "github.com/bgentry/speakeasy"
   version = "~0.1.0"
 
