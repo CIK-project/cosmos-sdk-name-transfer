@@ -7,6 +7,7 @@ import (
 	"io"
 	"os"
 	"path/filepath"
+	"time"
 
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	"github.com/cosmos/cosmos-sdk/client"
@@ -80,6 +81,11 @@ func initCmd(ctx *server.Context, cdc *codec.Codec) *cobra.Command {
 		RunE: func(_ *cobra.Command, _ []string) error {
 			config := ctx.Config
 			config.SetRoot(viper.GetString(cli.HomeFlag))
+			// make block intervals short
+			config.Consensus.TimeoutPropose = 600 * time.Millisecond
+			config.Consensus.TimeoutPrevote = 200 * time.Millisecond
+			config.Consensus.TimeoutPrecommit = 200 * time.Millisecond
+			config.Consensus.TimeoutCommit = 1 * time.Second
 
 			chainID := viper.GetString(client.FlagChainID)
 			if chainID == "" {
