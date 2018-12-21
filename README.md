@@ -24,5 +24,5 @@ Cosmonauts in Korea의 유튜브 강의인 "누구나 만드는 블록체인! Co
 - [CIK 페이스북 그룹](https://www.facebook.com/CosmosDev/)
 - [코스모스 개발 공부 텔레그램](https://t.me/joinchat/DE3DmA-mF0Yz1U5fPkopiA)
 - [CIK 미디엄](https://medium.com/cosmonauts-in-korea)
-- [CIK Github](https://github.com/CIK-projec)
+- [CIK Github](https://github.com/CIK-project)
 - [CIK YOUTUBE](https://www.youtube.com/channel/UCNWrN3aEMT4TzK9Vj_2c3pQ)
