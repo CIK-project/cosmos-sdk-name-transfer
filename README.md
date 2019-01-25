@@ -10,8 +10,8 @@ Cosmonauts in Korea의 유튜브 강의인 "누구나 만드는 블록체인! Co
 ## Lecture
 - [0강  : 강의 오리엔테이션](https://www.youtube.com/watch?v=OEkMCRK-VkU) 
 - [1강 : 개발 환경 설정](https://www.youtube.com/watch?v=R7ClOBiAQDM)
-- 2강 : Cosmos-SDK 구조 설명 👉 TODO
-- 3강 : app 만들기 👉 TODO
+- [2강 : Cosmos-SDK 구조 설명](https://www.youtube.com/watch?v=l1dSpL21ptE)
+- [3강 : app 만들기](https://www.youtube.com/watch?v=rGP3T27SorA)
 - 4강 : Auth 모듈 설명 👉 TODO
 - 5강 : name-transfer 구현 👉  TODO
 - 6강 : cli 구현 👉  TODO
