@@ -112,8 +112,11 @@ func (app *NameApp) initChainer(ctx sdk.Context, req abci.RequestInitChain) abci
 		// return sdk.ErrGenesisParse("").TraceCause(err, "")
 	}
 
-	for _, account := range genesisState.Accounts {
-		app.accountKeeper.SetAccount(ctx, account.ToAccount())
+	// load the accounts
+	for _, gacc := range genesisState.Accounts {
+		acc := gacc.ToAccount()
+		acc = app.accountKeeper.NewAccount(ctx, acc) // set account number
+		app.accountKeeper.SetAccount(ctx, acc)
 	}
 
 	return abci.ResponseInitChain{}

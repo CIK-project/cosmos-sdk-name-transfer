@@ -44,7 +44,7 @@ func NewGenesisAccountI(acc auth.Account) GenesisAccount {
 }
 
 // convert GenesisAccount to auth.BaseAccount
-func (ga *GenesisAccount) ToAccount() (acc *auth.BaseAccount) {
+func (ga *GenesisAccount) ToAccount() (acc auth.Account) {
 	return &auth.BaseAccount{
 		Address:       ga.Address,
 		Coins:         ga.Coins.Sort(),
